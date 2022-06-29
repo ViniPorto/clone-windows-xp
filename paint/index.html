@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="ferramentas">
+        <div style="display: flex;">
+            <div id="lapis" onclick="lapis()" style="background-image: url('pincel-lapis.png'); background-size: cover; width: 25px; height: 25px;"></div>
+            <div id="borracha" onclick="borracha()" style="background-image: url('borracha.png'); background-position: center; background-repeat: no-repeat; width: 25px; height: 25px;"></div>
+        </div>
+        <span></span>
+        <div id="paleta">
+            <div onclick="mudaCor(0)" style="background-color: #090909; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(1)" style="background-color: #ffffff; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(2)" style="background-color: #BDBDBD; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(3)" style="background-color: #FF6666; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(9)" style="background-color: #fdad63; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(4)" style="background-color: #FCFF69; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(5)" style="background-color: #67FF65; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(6)" style="background-color: #67FEFF; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(7)" style="background-color: #6385FF; width: 20px; height: 20px;"></div>
+            <div onclick="mudaCor(8)" style="background-color: #FB67FD; width: 20px; height: 20px;"></div>
+        </div>
+        <span></span>
+        <input type="range" min="2" max="20" id="input-tamanho-pincel">
+
+    </div>
+    <canvas width="600" height="400" id="canvas"></canvas>
+
+
+    <script>
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        var ultimaCor = 'black';
+
+        document.getElementById("canvas").style.cssText = 'cursor: url(lapis.png), default';
+
+        pincel.fillStyle = 'white';
+        pincel.fillRect(0, 0, 600, 400);
+
+        var desenha = false;
+        var cores = ['#090909', '#ffffff', '#BDBDBD', '#FF6666', '#FCFF69', '#67FF65', '#67FEFF', '#6385FF', '#FB67FD', '#fdad63'];
+
+        var indiceCorAtual = 0;
+
+        var tamanhoDoPincel = 5;
+
+        const input_tamanho_pincel = document.getElementById("input-tamanho-pincel");
+
+        input_tamanho_pincel.addEventListener('change', (event) => {
+            tamanhoDoPincel = event.target.value;
+        })
+
+        function desenhaCirculo(evento) {
+
+            if (desenha) {
+                var x = evento.pageX - tela.offsetLeft;
+                var y = evento.pageY - tela.offsetTop;
+                pincel.fillStyle = cores[indiceCorAtual];
+                pincel.beginPath();
+                pincel.arc(x, y, tamanhoDoPincel, 0, 2 * 3.14);
+                pincel.fill();
+            }
+        }
+
+        function mudaCor(numero) {
+            document.getElementById("canvas").style.cssText = 'cursor: url(lapis.png), default';
+            indiceCorAtual = numero;
+            ultimaCor = numero;
+
+            return false; // para não exibir o menu padrão do canvas
+        }
+
+        function borracha() {
+            document.getElementById("canvas").style.cssText = 'cursor: url(quadrado.png) 10 10, default';
+            indiceCorAtual = 1;
+        }
+
+        function lapis() {
+            document.getElementById("canvas").style.cssText = 'cursor: url(lapis.png), default';
+            indiceCorAtual = ultimaCor;
+        }
+
+        tela.onmousemove = desenhaCirculo;
+
+        function habilitaDesenhar() {
+
+            desenha = true;
+        }
+
+        function desabilitaDesenhar() {
+
+            desenha = false;
+        }
+
+        tela.onmousedown = habilitaDesenhar;
+
+        tela.onmouseup = desabilitaDesenhar;
+
+    </script>
+</body>
+
+</html>

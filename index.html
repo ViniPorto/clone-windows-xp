@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows XP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        jQuery(window).load(function ($) {
+            atualizaRelogio();
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="desktop">
+        <!-- LINHA 1 -->
+        <div class="celula-disponivel td">
+            <div draggable="true" class="teste">
+                <a href="#meu-computador">
+                    <img width="80" src="img/My Computer.ico" alt="">
+                    <p>Meu Computador</p>
+                </a>
+            </div>
+        </div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+
+        <!-- LINHA 2 -->
+        <div class="celula-disponivel td">
+            <div draggable="true">
+                <a href="#">
+                    <img width="80" src="img/Minesweeper.ico" alt="">
+                    <p>Campo Minado</p>
+                </a>
+            </div>
+        </div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+
+        <!-- LINHA 3 -->
+        <div class="celula-disponivel td">
+            <div draggable="true">
+                <a href="#modal-imagens" id="link-api-gatos">
+                    <img width="80" src="img/JPG.png" alt="">
+                    <p>gatos.jpg</p>
+                </a>
+            </div>
+        </div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+
+        <!-- LINHA 4 -->
+        <div class="celula-disponivel td">
+            <div draggable="true">
+                <a href="#pong" onclick="inserir_pong()">
+                    <img width="80" src="img/pong-logo.png" alt="">
+                    <p>Pong</p>
+                </a>
+            </div>
+        </div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+
+        <!-- LINHA 5  -->
+        <div class="celula-disponivel td">
+            <div draggable="true">
+                <a href="#">
+                    <img width="80" src="img/Recycle-Bin.png" alt="">
+                    <p>Lixeira</p>
+                </a>
+            </div>
+        </div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+
+        <!-- LINHA 6 -->
+        <div class="celula-disponivel td">
+            <div draggable="true">
+                <a href="#paint">
+                    <img width="80" src="img/Paint.png" alt="">
+                    <p>Paint</p>
+                </a>
+            </div>
+        </div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+        <div class="celula-disponivel td"></div>
+    </div>
+
+    <div id="barraDeTarefas">
+        <a href="#menu" onclick="inserir_menu_iniciar()">
+            <div id="menu-iniciar"><img width="100" id="menu-iniciar-start" src="img/menu.png" alt=""></div>
+        </a>
+        <div id="barra-lateral">
+            <a href="#"><img id="icone-som" src="img/Volume.png" alt=""></a>
+            <a href=""><output id="hora"></output></a>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+    <!-- MODAL - PASTA: MEU COMPUTADOR -->
+    <div id="meu-computador" class="modal">
+        <div class="modal-header">
+            <div style="width: 800px; display: flex; gap: 3px;">
+                <img src="img/Monitor.ico" alt="">
+                <h4 style="font-size: var(--16px);" ;>Meu Computador</h4>
+            </div>
+            <div class="modal-header-botoes">
+                <a href="#"><img src="img/botao-minimizar.png" alt=""></a>
+                <a href="#"><img src="img/botao-maximizar.png" alt=""></a>
+                <a href="#fechar" title="Fechar" class="fechar"><img src="img/botao-fechar.png" alt=""></a>
+            </div>
+        </div>
+        <ul style="display: flex; gap: 5px; background-color: #F1EFE1; border-bottom: 2px solid #DEDED2;font-size: var(--16px);">
+            <li><ins>A</ins>rquivo</li>
+            <li>E<ins>d</ins>itar</li>
+            <li>E<ins>x</ins>ibir</li>
+            <li>F<ins>a</ins>voritos</li>
+            <li>F<ins>e</ins>rramentas</li>
+            <li>Aj<ins>u</ins>da</li>
+            <img style="background-color: #ffffff; padding: 0 10px; margin-left: auto;" class="imagem-media" src="img/logo windows.png" alt="">
+        </ul>
+        <div>
+            <ul id="navegacao">
+                <li><img class="imagem-media" src="img/Back.png" alt=""></li>
+                <img style="margin: 5px; width: 0.6vw;" src="img/seta-pra-baixo.svg" alt="">
+                <li><img class="imagem-media" src="img/Forward.png" alt=""></li>
+                <img style="margin: 5px; width: 0.6vw;" src="img/seta-pra-baixo.svg" alt="">
+                <li><img class="imagem-media" src="img/Up.png" alt=""></li>
+                <li><img class="imagem-media" src="img/pesquisar.ico" alt=""></li>
+                <li><img class="imagem-media" src="img/pastas-abertas.png" alt=""></li>
+                <li><img class="imagem-media" src="img/Icon View.png" alt=""></li>
+                <img style="margin: 5px; width: 0.6vw;" src="img/seta-pra-baixo.svg" alt="">
+            </ul>
+            <div id="meu-pc-endereco">
+                <h4 style="font-size: 1.2vw;font-weight: normal;">E<ins>n</ins>dereço</h4>
+                <div id="endereco-link">
+                    <p>Meu computador</p>
+                    <img src="img/seta-pra-baixo.svg" alt="">
+                </div>
+                <div id="endereco-ir">
+                    <p>Ir</p>
+                </div>
+            </div>
+            <div id="meu-pc-grid">
+                <section id="meu-pc-grid-atalhos">
+                    <ul class="atalhos-sections">
+                        <li class="atalhos-header">
+                            <h2>Tarefas do sistema</h2>
+                            <img width="20" src="img/setas-duplas.svg" alt="">
+                        </li>
+
+                        <li class="atalhos-pastas">
+                            <img class="mini-imagens" src="img/253.ico" alt="">
+                            <p>Exibir informações do sistema</p>
+                        </li>
+                        <li class="atalhos-pastas">
+                            <img class="mini-imagens" src="img/Programs.png" alt="">
+                            <p>Adicionar ou remover programas</p>
+                        </li>
+                        <li class="atalhos-pastas">
+                            <img class="mini-imagens" src="img/painel-de-controle.ico" alt="">
+                            <p>Alterar uma configuração</p>
+                        </li>
+                    </ul>
+                    <ul class="atalhos-sections">
+                        <li class="atalhos-header">
+                            <h2>Outros locais</h2>
+                            <img width="20" src="img/setas-duplas.svg" alt="">
+                        </li>
+                        <li class="atalhos-pastas">
+                            <img class="mini-imagens" src="img/locais-de-rede.ico" alt="">
+                            <p>Meus locais de rede</p>
+                        </li>
+                        <li class="atalhos-pastas">
+                            <img class="mini-imagens" src="img/meus-documentos.ico" alt="">
+                            <p>Meus documentos</p>
+                        </li>
+                        <li class="atalhos-pastas">
+                            <img class="mini-imagens" src="img/Folder Closed.ico" alt="">
+                            <p>Documentos compartilhados</p>
+                        </li>
+                        <li class="atalhos-pastas">
+                            <img class="mini-imagens" src="img/painel-de-controle.ico" alt="">
+                            <p>Painel de controle</p>
+                        </li>
+                    </ul>
+                    <ul class="atalhos-sections">
+                        <li class="atalhos-header">
+                            <h2>Detalhes</h2>
+                            <img class="" width="20" src="img/setas-duplas.svg" alt="">
+                        </li>
+                        <li>
+                            <h2>Meu computador</h2>
+                            <p>Pasta do sistema</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="meu-pc-grid-main">
+                    <h2 class="topicos-header">Arquivos armazenados neste computador</h2>
+                    <div class="meu-pc-topicos">
+                        <div class="meu-pc-itens">
+                            <img class="imagem-grande" src="img/Folder Closed.ico" alt="">
+                            <p>Documentos compartilhados</p>
+                        </div>
+                        <div class="meu-pc-itens">
+                            <img class="imagem-grande" src="img/Folder Closed.ico" alt="">
+                            <p>Administrador - documentos</p>
+                        </div>
+                    </div>
+                    <h2 class="topicos-header">Unidades de disco rígido</h2>
+                    <div class="meu-pc-topicos">
+                        <div class="meu-pc-itens">
+                            <img class="imagem-grande" src="img/9.ico" alt="">
+                            <p>Disco local (C:)</p>
+                        </div>
+                    </div>
+                    <h2 class="topicos-header">Dispositivos com armazenamento removível</h2>
+                    <div class="meu-pc-topicos">
+                        <div class="meu-pc-itens">
+                            <img class="imagem-grande" src="img/7.ico" alt="">
+                            <p>Disquete de 3½ (A:)</p>
+                        </div>
+                        <div class="meu-pc-itens">
+                            <img class="imagem-grande" src="img/12.ico" alt="">
+                            <p>Unidade de DVD-RAM (D:)</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL - API GATOS -->
+    <div id="modal-imagens" class="modal">
+        <div class="modal-header">
+            <div>
+                <img src="img/JPG.png" alt="">
+            </div>
+            <div class="modal-header-botoes">
+                <a href="#">
+                    <img src="img/botao-minimizar.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/botao-maximizar.png" alt="">
+                </a>
+                <a href="#fechar" title="Fechar" class="fechar" id="botao-fechar-imagem-gato">
+                    <img src="img/botao-fechar.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="img-gato">
+            <img src="" alt="" id="imagens-api-gato">
+        </div>
+    </div>
+
+    <!-- MODAL - JOGO: PONG -->
+    <div id="pong" class="modal">
+        <div class="modal-header pong-header">
+            <div style="width: 800px; display: flex; gap: 3px;">
+                <img id="pong-logo" src="img/pong-logo.png" alt="">
+                <h4>Pong</h4>
+            </div>
+            <div class="modal-header-botoes">
+                <a href="/">
+                    <img src="img/botao-minimizar.png" alt="">
+                </a>
+                <a>
+                    <img src="img/botao-maximizar-disabled.png" alt="">
+                </a>
+                <a href="#fechar" title="Fechar" class="fechar" onclick="retirar_pong()">
+                    <img src="img/botao-fechar.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL - PAINT -->
+    <div id="paint" class="modal">
+        <div class="modal-header">
+            <div style="width: 800px; display: flex; gap: 3px;">
+                <img id="paint-logo" src="img/Paint.png" alt="">
+                <h4>untitled - Paint</h4>
+            </div>
+            <div class="modal-header-botoes">
+                <a href="#"><img src="img/botao-minimizar.png" alt=""></a>
+                <a><img src="img/botao-maximizar-disabled.png" alt=""></a>
+                <a href="#fechar" title="Fechar" class="fechar"><img src="img/botao-fechar.png" alt=""></a>
+            </div>
+        </div>
+        <iframe src="paint/index.html" width="685" height="428"></iframe>
+    </div>
+
+    <!-- MODAL - MENU INICIAR -->
+    <!-- <div id="menu" class="modal">
+        <div id="menu-header">
+            <div id="usuario">
+                <img width="40" id="usuario-perfil" src="img/duck 1.png" alt="">
+                <h3 id="usuario-nome">Eliot</h3>
+            </div>
+        </div>
+        <div class="menu-principal">
+            <ul class="menu-lado-esquerdo">
+                <li class="menu-item" href="#chrome">
+                    <img width="40" class="menu-item-img" src="img/Google_Chrome_icon.png" alt="">
+                    <div>
+                        <h6>Internet</h6>
+                        <h6 class="texto-500 texto-cinza">Google Chrome</h6>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Outlook-Express-Icone.png" alt="">
+                    <div>
+                        <h6>Email</h6>
+                        <h6 class="texto-500 texto-cinza">Outlook Express</h6>
+                    </div>
+                </li>
+                <span></span>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Microsoft-Excel.png" alt="">
+                    <h6 class="texto-500">Microsoft Office Excel 2003</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/bloco-de-notas.png" alt="">
+                    <h6 class="texto-500">Bloco de notas</h6>
+                </li>
+                <li class="menu-item" href="#paint">
+                    <img width="40" class="menu-item-img" src="img/Paint.png" alt="">
+                    <h6 class="texto-500">Paint</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Windows Media Player 10.png" alt="">
+                    <h6 class="texto-500">Windows Media Player</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Microsoft-Word.png" alt="">
+                    <h6 class="texto-500">Microsoft Office Word 2003</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/msn.png" alt="">
+                    <h6 class="texto-500">Windows Live Messenger</h6>
+                </li>
+                <span></span>
+                <li id="menu-programas" class="menu-item">
+                    <h6>Todos os programas</h6>
+                    <img width="40" class="menu-item-img" src="img/246.ico" alt="">
+                </li>
+            </ul>
+            <ul class="menu-lado-direito">
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/meus-documentos.ico" alt="">
+                    <h6>Meus documentos</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/documentos-recentes.ico" alt="">
+                    <h6>Documentos recentes</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/minhas-imagens.ico" alt="">
+                    <h6>Minhas imagens</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/minhas-musicas.ico" alt="">
+                    <h6>Minhas músicas</h6>
+                </li>
+                <li class="menu-item texto-azul" href="#meu-computador">
+                    <img width="40" class="menu-item-img" src="img/meu-computador.ico" alt="">
+                    <h6>Meu computador</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/locais-de-rede.ico" alt="">
+                    <h6>Meus locais de rede</h6>
+                </li>
+                <span></span>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/painel-de-controle.ico" alt="">
+                    <h6 class="texto-500">Painel de controle</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/Default Programs.png" alt="">
+                    <h6 class="texto-500">Definir acesso e padrões do programa</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/impressora-fax.ico" alt="">
+                    <h6 class="texto-500">Impressoras e aparelhos de fax</h6>
+                </li>
+                <span></span>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/ajuda-e-suporte.ico" alt="">
+                    <h6 class="texto-500">Ajuda e suporte</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/pesquisar.ico" alt="">
+                    <h6 class="texto-500">Pesquisar</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/executar.ico" alt="">
+                    <h6 class="texto-500">Executar...</h6>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-footer">
+            <div class="span"></div>
+            <a href="#menu">
+                <img width="40" src="img/Logout.png" alt="">
+                <p>Fazer logoff</p>
+            </a>
+            <a href="#menu">
+                <img width="40" src="img/Power.png" alt="">
+                <p>Desligar o computador</p>
+            </a>
+        </div>
+    </div> -->
+
+    <!-- MODAL - CHROME -->
+    <div id="chrome" class="modal">
+        <div class="modal-header">
+            <div style="width: 800px; display: flex; gap: 3px;">
+                <img src="" alt="">
+                <h4>Google Chrome</h4>
+            </div>
+            <div class="modal-header-botoes">
+                <a href="#">
+                    <img src="img/botao-minimizar.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/botao-maximizar.png" alt="">
+                </a>
+                <a href="#fechar" title="Fechar" class="fechar">
+                    <img src="img/botao-fechar.png" alt="">
+                </a>
+            </div>
+        </div>
+        <h1></h1>
+    </div>
+
+    <script>
+        const elementos = document.querySelectorAll("[draggable='true']");
+        const celulas_disponiveis = document.querySelectorAll(".celula-disponivel");
+    
+        elementos.forEach((elemento) => {
+            elemento.addEventListener("dragstart", comecar_arrastar);
+        })
+        celulas_disponiveis.forEach((celula) => {
+            celula.addEventListener("dragover", entrou_soltar);
+            celula.addEventListener("click", () => {
+                const desktop = document.getElementById("desktop");
+                const menu_iniciar = document.getElementById("menu");
+                menu_iniciar.remove(menu_iniciar);
+                console.log("OPA");
+            });
+        })
+        celulas_disponiveis.forEach((celula) => {
+            celula.addEventListener("dragleave", saiu_soltar);
+        })
+        celulas_disponiveis.forEach((celula) => {
+            celula.addEventListener("dragend", soltou_elemento);
+        })
+        function soltou_elemento() {
+            this.classList.remove("celula-disponivel");
+            this.classList.add("celula-");
+            this.children[0].classList.remove("arrastando");
+            //alert(this.children[0].className);
+        }
+        function saiu_soltar() {
+            this.classList.add("celula-disponivel");
+            this.classList.remove("celula-");
+            //let name = document.getElementById("myLI").parentNode.nodeName;
+            this.classList.remove("arrastado");
+        }
+        function entrou_soltar() {
+
+            if (this.children[0] == undefined) {
+                this.classList.add("arrastado");
+
+                const elemento_arrastado = document.querySelector(".arrastando");
+
+                this.appendChild(elemento_arrastado);
+            }
+        }
+        function comecar_arrastar() {
+            this.classList.add("arrastando");
+        }
+        function atualizaRelogio() {
+            var momentoAtual = new Date();
+
+            var vhora = momentoAtual.getHours();
+            var vminuto = momentoAtual.getMinutes();
+
+            if (vhora < 10) { vhora = "0" + vhora; }
+            if (vminuto < 10) { vminuto = "0" + vminuto; }
+
+            horaFormat = vhora + ":" + vminuto;
+
+            document.getElementById("hora").innerHTML = horaFormat;
+
+            setTimeout("atualizaRelogio()", 60000);
+        }
+        function inserir_pong(){
+            const iframe = document.createElement("iframe");
+            iframe.src = "jogo-Pong/index.html";
+            iframe.width = "600";
+            iframe.height = "400";
+            iframe.id = "iframe-pong";
+            document.getElementById("pong").appendChild(iframe);
+        }
+        function retirar_pong(){
+            const iframe_pong = document.getElementById("iframe-pong");
+            iframe_pong.parentNode.removeChild(iframe_pong);
+        }
+        function inserir_menu_iniciar(){
+            const body = document.body;
+            body.innerHTML += (`<div id="menu" class="modal" onblur="retirar_menu_iniciar()">
+        <div id="menu-header">
+            <div id="usuario">
+                <img width="40" id="usuario-perfil" src="img/duck 1.png" alt="">
+                <h3 id="usuario-nome">Eliot</h3>
+            </div>
+        </div>
+        <div class="menu-principal">
+            <ul class="menu-lado-esquerdo">
+                <li class="menu-item" href="#chrome">
+                    <img width="40" class="menu-item-img" src="img/Google_Chrome_icon.png" alt="">
+                    <div>
+                        <h6>Internet</h6>
+                        <h6 class="texto-500 texto-cinza">Google Chrome</h6>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Outlook-Express-Icone.png" alt="">
+                    <div>
+                        <h6>Email</h6>
+                        <h6 class="texto-500 texto-cinza">Outlook Express</h6>
+                    </div>
+                </li>
+                <span></span>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Microsoft-Excel.png" alt="">
+                    <h6 class="texto-500">Microsoft Office Excel 2003</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/bloco-de-notas.png" alt="">
+                    <h6 class="texto-500">Bloco de notas</h6>
+                </li>
+                <li class="menu-item" href="#paint">
+                    <img width="40" class="menu-item-img" src="img/Paint.png" alt="">
+                    <h6 class="texto-500">Paint</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Windows Media Player 10.png" alt="">
+                    <h6 class="texto-500">Windows Media Player</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/Microsoft-Word.png" alt="">
+                    <h6 class="texto-500">Microsoft Office Word 2003</h6>
+                </li>
+                <li class="menu-item">
+                    <img width="40" class="menu-item-img" src="img/msn.png" alt="">
+                    <h6 class="texto-500">Windows Live Messenger</h6>
+                </li>
+                <span></span>
+                <li id="menu-programas" class="menu-item">
+                    <h6>Todos os programas</h6>
+                    <img width="40" class="menu-item-img" src="img/246.ico" alt="">
+                </li>
+            </ul>
+            <ul class="menu-lado-direito">
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/meus-documentos.ico" alt="">
+                    <h6>Meus documentos</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/documentos-recentes.ico" alt="">
+                    <h6>Documentos recentes</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/minhas-imagens.ico" alt="">
+                    <h6>Minhas imagens</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/minhas-musicas.ico" alt="">
+                    <h6>Minhas músicas</h6>
+                </li>
+                <li class="menu-item texto-azul" href="#meu-computador">
+                    <img width="40" class="menu-item-img" src="img/meu-computador.ico" alt="">
+                    <h6>Meu computador</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/locais-de-rede.ico" alt="">
+                    <h6>Meus locais de rede</h6>
+                </li>
+                <span></span>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/painel-de-controle.ico" alt="">
+                    <h6 class="texto-500">Painel de controle</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/Default Programs.png" alt="">
+                    <h6 class="texto-500">Definir acesso e padrões do programa</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/impressora-fax.ico" alt="">
+                    <h6 class="texto-500">Impressoras e aparelhos de fax</h6>
+                </li>
+                <span></span>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/ajuda-e-suporte.ico" alt="">
+                    <h6 class="texto-500">Ajuda e suporte</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/pesquisar.ico" alt="">
+                    <h6 class="texto-500">Pesquisar</h6>
+                </li>
+                <li class="menu-item texto-azul">
+                    <img width="40" class="menu-item-img" src="img/executar.ico" alt="">
+                    <h6 class="texto-500">Executar...</h6>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-footer">
+            <div class="span"></div>
+            <a href="#menu">
+                <img width="40" src="img/Logout.png" alt="">
+                <p>Fazer logoff</p>
+            </a>
+            <a href="#menu">
+                <img width="40" src="img/Power.png" alt="">
+                <p>Desligar o computador</p>
+            </a>
+        </div>
+    </div>`);
+        }
+        
+
+    </script>
+    <script src="api-gato.js"></script>
+</body>
+
+</html>
