@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+#calculadora {
+  width: 200px;
+  background-color: #eee7dd;
+  padding: 20px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 2px 8px #00000077; */
+  /* margin: 15px auto; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-template-rows: auto repeat(5, 40px);
+}
+button {
+  padding: 0.25em;
+  color: #cc1a1a;
+  border-radius: 4px;
+  background-color: #f1ede7;
+  border-color: rgb(211, 211, 211);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+button:hover{
+    background-color: #d8d8d869;
+}
+button[onclick^="incluirDigito"]{
+    color: #1a3bcc;
+}
+#display {
+  padding: 3px 10px;
+  font-size: 1.4em;
+  text-align: right;
+  background-color: #eeeeee;
+  border: 2px solid gray;
+  border-radius: 4px;
+  box-shadow: inset 2px 2px 0 white;
+  margin-bottom: 15px;
+  grid-column: 1 / -1;
+}
+.mais {
+  grid-row: 5 / 7;
+  grid-column: 4 / 5;
+}
+.zero {
+  grid-column: 1 / 3;
+}

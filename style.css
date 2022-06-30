@@ -61,6 +61,7 @@ ul li {
   border: 2px solid #1c4ecb;
   border-radius: 5px 5px 0 0;
   background-color: #ffffff;
+  max-height: 95vh;
 }
 
 .modal:target {
@@ -78,7 +79,7 @@ body .modal-header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 5vmin;
+  height: 5vh;
   background: linear-gradient(
       180deg,
       #1c4dcb00 0%,
@@ -101,9 +102,13 @@ body .modal-header {
   font-family: "Fira Sans", sans-serif;
   color: white;
   font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: var(--16px);
 }
 
-.modal-header-botoes {
+.header-botoes {
   display: flex;
   gap: 4px;
   align-items: center;
@@ -111,12 +116,12 @@ body .modal-header {
   justify-content: flex-end;
 }
 
-.modal-header-botoes a {
+.header-botoes a {
   width: 4.5%;
   height: 4.5%;
 }
 
-.modal-header .modal-header-botoes img {
+.modal-header .header-botoes img {
   width: 100%;
   border: 1px solid #d6d6d6;
   border-radius: 3px;
@@ -181,8 +186,8 @@ body .modal-header {
 }
 
 #menu-iniciar {
-  height: 5vmin;
-  width: 8%;
+  height: 5vh;
+  width: 8vw;
   position: absolute;
   bottom: 0;
   box-sizing: border-box;
@@ -214,7 +219,7 @@ body .modal-header {
 #barra-lateral {
   display: flex;
   position: absolute;
-  height: 5vmin;
+  height: 5vh;
   right: 0;
   width: 10%;
   bottom: 0;
@@ -271,7 +276,6 @@ body .modal-header {
   width: 30vw;
   height: 85vh;
   bottom: 5vh;
-  border-radius: 8px 8px 0 0;
   border-width: 0px 3px;
   background-color: #7195c2;
   top: initial;
@@ -305,7 +309,7 @@ body .modal-header {
 
 #usuario-perfil {
   width: 13%;
-  margin-top: 2px;
+  margin-top: 1%;
 }
 
 #usuario-nome {
@@ -326,7 +330,6 @@ body .modal-header {
 #menu-footer a {
   display: flex;
   align-items: center;
-  float: right;
   padding: 1% 3%;
   gap: 4px;
 }
@@ -341,7 +344,7 @@ body .modal-header {
   width: auto;
 }
 
-.menu-principal {
+.lista-programas {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -356,20 +359,20 @@ body .modal-header {
   margin: 10px auto;
 }
 
-.menu-lado-esquerdo span {
+#menu-lado-1 span {
   background-color: #dadadac0;
 }
 
-.menu-lado-direito span {
+#menu-lado-2 span {
   background-color: #124ea128;
 }
 
-#menu .menu-lado-direito {
+#menu-lado-2 {
   background-color: #d3e5fb;
   padding: 8px;
 }
 
-#menu .menu-lado-esquerdo {
+#menu-lado-1 {
   background-color: #ffffff;
   padding: 8px;
 }
@@ -378,19 +381,30 @@ body .modal-header {
   display: flex;
   gap: 3px;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
   cursor: pointer;
+  padding: 2px;
+}
+
+.menu-item:hover {
+  background-color: #2f71cd;
+  color: #eff3ff;
 }
 
 .menu-item h6 {
   font-size: 0.85vw;
 }
 
-.menu-item-img {
+#menu-lado-2 .menu-item-img,
+#menu-lado-1 .menu-item-img:last-child {
   width: 14%;
 }
 
-#menu-programas {
+#menu-lado-1 .menu-item-img {
+  width: 18%;
+}
+
+#todos-os-programas {
   justify-content: center;
   gap: 5%;
 }
@@ -400,7 +414,7 @@ body .modal-header {
   margin: 0 auto;
   margin-top: 10%;
   width: 604px;
-  height: 436px;
+  height: calc(404px + 5vh)
 }
 
 #pong .modal-header {
@@ -413,17 +427,19 @@ body .modal-header {
 }
 
 #pong #pong-logo,
-#paint #paint-logo {
-  width: 4%;
+#paint #paint-logo,
+#calculadora-icone {
+  width: 4vh;
 }
 
-#pong .modal-header-botoes a {
+#pong .header-botoes a {
   width: 10%;
   height: auto;
 }
 
-#pong .modal-header .modal-header-botoes a:nth-child(2) img,
-#paint .modal-header .modal-header-botoes a:nth-child(2) img {
+#pong .modal-header .header-botoes a:nth-child(2) img,
+#paint .modal-header .header-botoes a:nth-child(2) img,
+#calculadora .modal-header .header-botoes a:nth-child(2) img {
   border: 1px solid #7da4bb;
   pointer-events: none;
 }
@@ -436,7 +452,7 @@ body .modal-header {
   margin-top: 3%;
 }
 
-#paint .modal-header-botoes a {
+#paint .header-botoes a {
   width: 1.6vw;
 }
 
@@ -445,6 +461,10 @@ body .modal-header {
 }
 
 /* MODAL - MEU COMPUTADOR */
+#meu-computador {
+  height: 95vh;
+}
+
 #navegacao {
   display: flex;
   align-items: center;
@@ -452,21 +472,26 @@ body .modal-header {
   border-bottom: 2px solid #deded2;
   padding: 1vh;
   gap: 1px;
+  height: 3.5vh;
 }
 
 #meu-computador #navegacao li {
   padding: 0 0.5vw;
 }
 
-#navegacao img:nth-child(5),
-#navegacao img:nth-child(7) {
+#navegacao li:nth-child(5),
+#navegacao li:nth-child(7) {
   border-right: 2px solid #deded2;
   padding-right: 8px;
 }
 
 #meu-computador li {
   cursor: pointer;
-  padding: 4.5px 10px;
+  padding: 0.456vw 0.999vw;
+}
+
+#meu-computador .atalhos-sections li.atalhos-header {
+  padding: 0.25vw 10px;
 }
 
 #meu-pc-endereco {
@@ -475,6 +500,7 @@ body .modal-header {
   align-items: center;
   background-color: #f1efe1;
   padding: 0.1vw;
+  height: 4.5vh;
 }
 
 #endereco-link {
@@ -524,14 +550,27 @@ body .modal-header {
 #meu-pc-grid {
   display: grid;
   grid-template-columns: 1fr 3.3fr;
-  height: 80vh;
+  height: 100%;
 }
 
-#meu-pc-grid-atalhos {
+#meu-pc-grid h2 {
+  font-size: 1.07vw;
+  line-height: 1.5;
+}
+
+#meu-pc-grid-1 {
   background: linear-gradient(180deg, #7ba0ed 28.98%, #6476d5 100%);
   color: #0e2858;
   display: flex;
   flex-direction: column;
+}
+
+#meu-pc-grid-2 {
+  background-color: #ffffff;
+  height: 75vh;
+}
+#meu-pc-grid-2 p {
+  font-size: var(--16px);
 }
 
 .atalhos-sections {
@@ -562,11 +601,6 @@ body .modal-header {
   font-size: 1.07vw;
 }
 
-#meu-pc-grid h2 {
-  font-size: 1.07vw;
-  line-height: 1.5;
-}
-
 .topicos-header {
   border-bottom: 2px solid #5c84eb;
   border-image: linear-gradient(
@@ -594,6 +628,66 @@ body .modal-header {
   cursor: pointer;
 }
 
-#meu-pc-grid-main p {
+.caixa-barra {
+  display: flex;
+  height: 3vh;
+  min-width: 13%;
+  align-items: center;
+  position: absolute;
+  left: 9vw;
+  padding: 2px 5px;
+  gap: 5px;
+  bottom: 0.4vh;
+  color: #ffffff;
+  border: 0.1vw solid #0e2858;
+  border-radius: 3%;
+  background-color: #124988e8;
+}
+
+.caixa-barra p {
   font-size: var(--16px);
+}
+
+.caixa-barra img {
+  height: 3vh;
+}
+
+/* IFRAMES */
+#chrome iframe {
+  height: calc(100% - 5vh - 4px);
+  width: 100%100%;
+}
+
+#calculadora iframe {
+  width: 240px;
+  height: 316px;
+}
+
+#paint iframe {
+  height: 425px;
+}
+
+/* CALCULADORA */
+#calculadora {
+  width: 244px;
+  height: calc(320px + 5vh) ;
+  margin-top: 7%;
+  margin-left: 57%;
+}
+#calculadora .header-botoes img {
+  margin-left: 3px;
+}
+
+#calculadora .header-botoes a {
+  width: 1.6vw;
+}
+
+#calculadora .modal-header {
+  width: 98%;
+}
+
+#calculadora .modal-header img {
+  width: 1.6vw;
+  height: 1.6vw;
+  
 }
