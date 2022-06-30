@@ -1,0 +1,93 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  background-color: #c6c6c6;
+  height: 95vh;
+  width: 100vw;
+  background-image: url(https://images2.alphacoders.com/941/thumb-1920-941898.jpg);
+  background-size: cover;
+  align-items: center;
+  margin: 0 auto;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.grid div {
+  border: 1px dashed rgb(85, 85, 85);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+#barra-lateral{
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    height: 5vmin;
+    right: 0;
+    width: 10%;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      #5fd8f2 6.77%,
+      rgba(0, 135, 193, 0.71) 17.19%,
+      rgba(14, 136, 189, 0.824906) 80.73%,
+      #1882af 100%
+    ),
+    #67e4ff;
+    box-shadow: inset 2px 0px 1px rgba(206, 243, 237, 0.25);
+    align-items: center;
+    justify-content: center;
+}
+#barraDeTarefas {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  height: 5vmin;
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(28, 77, 203, 0) 0%,
+      #4595df 3.12%,
+      rgba(46, 84, 182, 0.71) 14.06%,
+      rgba(47, 97, 181, 0.922667) 83.33%,
+      #2057a9 100%
+    ),
+    #126ad1;
+  box-shadow: inset -2px 0px 3px #00000032;
+}
+
+#menu-iniciar {
+    font-family: Tahoma, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    height: 5vmin;
+    width: 8%;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background: radial-gradient(
+      46.58% 430.9% at 46.58% 50%,
+      rgba(20, 255, 0, 0.142) 0%,
+      rgba(4, 85, 27, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      #5bc729 6.77%,
+      rgba(0, 107, 43, 0.85) 13.54%,
+      #1cad10 84.37%,
+      #1e7807 100%
+    ),
+    #2cc21f;
+    box-shadow: inset -1px 0px 4px #04420cc2;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+}
