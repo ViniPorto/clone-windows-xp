@@ -47,6 +47,8 @@ Originalmente um trabalho da faculdade (disciplina de desenvolvimento web) onde 
   - [x] jogar o jogo Pong
   - [x] navegar pelo Chrome
   - [x] fazer desenhos no Paint
+  - [x] arrastar icones da área de trabalho
+  - [x] abrir o menu iniciar
   - [x] além de abrir uma imagem: 
     - esta imagem aberta é aleatória, depende do retorno da API de gatos (https://cataas.com/cat)
 
