@@ -35,7 +35,7 @@
 
 💻 Clone Windows XP. 
 
-Originalmente um trabalho da faculade (disciplina de desenvolvimento web) onde o tema para desenvolvimento era livre.
+Originalmente um trabalho da faculdade (disciplina de desenvolvimento web) onde o tema para desenvolvimento era livre.
 
 ---
 
@@ -108,7 +108,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <sub><b>Vinícius Porto</b></sub></a> <a href="https://github.com/ViniPorto" title="ViniPorto">🚀</a>
  <br />
 
-[![Facebook Badge](https://img.shields.io/badge/-Vinicius-blue?style=flat-square&logo=Facebook&logoColor=white&link=https://www.facebook.com/ViniciusLeinatePorto/)](https://www.facebook.com/ViniciusLeinatePorto/) 
 [![Linkedin Badge](https://img.shields.io/badge/-Vinicius-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vinicius-porto-9a1996209/)](https://www.linkedin.com/in/vinicius-porto-9a1996209/) 
 [![Gmail Badge](https://img.shields.io/badge/-leinateporto@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:leinateporto@gmail.com)](mailto:leinateporto@gmail.com)
 
