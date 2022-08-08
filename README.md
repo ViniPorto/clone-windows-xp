@@ -59,7 +59,15 @@ Originalmente um trabalho da faculdade (disciplina de desenvolvimento web) onde 
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/desktop.png" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/desktop1.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/desktop2.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/iniciar.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/calculadora.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/meucomputador.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/pong.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/gato.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/chrome.jpg" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/paint.jpg" width="400px">
 </p>
 
 ---
