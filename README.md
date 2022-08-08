@@ -59,7 +59,7 @@ Originalmente um trabalho da faculdade (disciplina de desenvolvimento web) onde 
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="https://wikiimg.tojsiabtv.com/wikipedia/en/6/64/Windows_XP_Luna.png" width="400px">
+  <img alt="Clone Windows XP Desktop" title="#WindowsClone" src="./prints/desktop.png" width="400px">
 </p>
 
 ---
