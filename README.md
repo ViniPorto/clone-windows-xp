@@ -126,7 +126,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 📝 Licença
 
-Este projeto não possui licença. Livre para copiar! :D
+Este projeto esta sob a licença [MIT](./LICENSE).
 
 Feito com ❤️ por Vinícius Porto 👋🏽 [Entre em contato!](https://www.linkedin.com/in/vinicius-porto-9a1996209/)
 
