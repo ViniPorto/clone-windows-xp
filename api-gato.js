@@ -4,7 +4,7 @@ const gatos = async () => {
   const dadosJson = await dados.json();
   document.getElementById(
     "imagens-api-gato"
-  ).src = `https://cataas.com/${dadosJson._id}`;
+  ).src = `https://cataas.com/cat/${dadosJson._id}`;
 };
 
 const limpar_dados_api_gato = () => {
