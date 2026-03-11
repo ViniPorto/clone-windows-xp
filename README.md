@@ -91,16 +91,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## 👨‍💻 Contribuidores
-
-❤️ Um super agradecimento 👏 para a Mirella Naspolini que auxiliou demais com o CSS:
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/mirellanaspolini"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104786840?v=4" width="100px;" alt=""/><br /><sub><b>Mirella Naspolini</b></sub></a><br /><a href="https://github.com/mirellanaspolini" title="Mirella">🐧</a></td>
-  </tr>
-</table>
-
 ## 💪 Como contribuir no projeto
 
 1. Faça um **fork** do projeto.
